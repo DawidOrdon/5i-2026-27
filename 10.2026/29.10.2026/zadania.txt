@@ -1,0 +1,131 @@
+Zadanie 1 – Analiza przedziału — 5 pkt
+
+Utwórz formularz, w którym użytkownik podaje:
+
+początek zakresu,
+
+koniec zakresu,
+
+liczbę kontrolną.
+
+Program powinien:
+
+Sprawdzić, czy wszystkie dane zostały podane i czy są poprawnymi wartościami liczbowymi. 1 pkt
+
+Sprawdzić, czy początek zakresu jest mniejszy od końca oraz czy liczba kontrolna jest większa od 0. 1 pkt
+
+Wyświetlić wszystkie liczby z podanego zakresu, które:
+
+są większe od liczby kontrolnej,
+
+oraz są parzyste. 1 pkt
+
+Obliczyć sumę znalezionych liczb oraz policzyć, ile ich znaleziono. 1 pkt
+
+Wyświetlić najmniejszą znalezioną liczbę. Jeżeli żadna liczba nie spełnia warunków, wyświetlić odpowiedni komunikat. 1 pkt
+
+Przykład:
+
+Początek: 5
+Koniec: 25
+Liczba kontrolna: 12
+
+14 16 18 20 22 24
+
+Liczba elementów: 6
+Suma: 114
+Najmniejsza: 14
+
+Zadanie 2 – Magazyn komputerowy — 5 pkt
+
+Dana jest tablica:
+
+$magazyn = [
+    ["nazwa" => "Monitor", "cena" => 900, "ilosc" => 4],
+    ["nazwa" => "Mysz", "cena" => 80, "ilosc" => 15],
+    ["nazwa" => "Klawiatura", "cena" => 160, "ilosc" => 7],
+    ["nazwa" => "Laptop", "cena" => 3500, "ilosc" => 2],
+    ["nazwa" => "Pendrive", "cena" => 50, "ilosc" => 25]
+];
+
+Napisz program, który:
+
+Wyświetli nazwę produktu, cenę, liczbę sztuk i wartość danego produktu w magazynie. 1 pkt
+
+Obliczy łączną wartość całego magazynu. 1 pkt
+
+Znajdzie produkt, którego liczba sztuk jest najmniejsza. 1 pkt
+
+Policzy, ile produktów ma wartość magazynową większą niż 1000 zł. 1 pkt
+
+Znajdzie produkt o największej wartości magazynowej i wyświetli:
+
+jego nazwę,
+
+wartość magazynową,
+
+procentowy udział tej wartości w całym magazynie. 1 pkt
+
+Przykład:
+
+Monitor – 900 zł – 4 szt. – wartość: 3600 zł
+
+Zadanie 3 – Limit wydatków — 5 pkt
+
+Utwórz formularz, w którym użytkownik podaje:
+
+posiadany budżet,
+
+cenę jednego produktu,
+
+maksymalną liczbę produktów.
+
+Program powinien:
+
+Sprawdzić poprawność wszystkich danych. Wszystkie wartości muszą być większe od 0. 1 pkt
+
+Kupować kolejne produkty do momentu, gdy:
+
+zabraknie pieniędzy na następny produkt
+lub
+
+zostanie osiągnięta maksymalna liczba produktów. 1 pkt
+
+Po każdym zakupie wyświetlić:
+
+numer zakupionego produktu,
+
+pozostały budżet. 1 pkt
+
+Na końcu wyświetlić:
+
+liczbę kupionych produktów,
+
+łączną wydaną kwotę,
+
+pozostały budżet. 1 pkt
+
+Wyświetlić jeden z komunikatów:
+
+OSIĄGNIĘTO LIMIT PRODUKTÓW
+
+BRAK ŚRODKÓW NA KOLEJNY PRODUKT
+
+Komunikat powinien odpowiadać rzeczywistemu powodowi zakończenia zakupów. 1 pkt
+
+Przykład:
+
+Budżet: 500 zł
+Cena produktu: 120 zł
+Maksymalna liczba produktów: 6
+
+Produkt 1 – pozostało: 380 zł
+Produkt 2 – pozostało: 260 zł
+Produkt 3 – pozostało: 140 zł
+Produkt 4 – pozostało: 20 zł
+
+Kupiono: 4
+Wydano: 480 zł
+Pozostało: 20 zł
+
+BRAK ŚRODKÓW NA KOLEJNY PRODUKT

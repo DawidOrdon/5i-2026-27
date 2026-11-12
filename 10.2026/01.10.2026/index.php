@@ -30,6 +30,16 @@
         }
 //        print_r($result->fetch_all());
     ?>
+
+    <?php
+        $sql = "SELECT * FROM klienci";
+        $query = $db->prepare($sql);
+        $query->execute();
+        $result = $query->get_result();
+        while ($row = $result->fetch_object()) {
+            echo $row->nazwisko . "<br>";
+        }
+    ?>
 </pre>
 </body>
 </html>

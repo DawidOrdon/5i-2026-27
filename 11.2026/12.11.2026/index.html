@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+<!--zad1-->
+<input type="radio" name="img" id="img1">img1
+<input type="radio" name="img" id="img2">img2
+<input type="number" name="ile" id="ile">
+<button onclick="img()">submit</button>
+
+<!--zad2-->
+<input type="color" name="" id="color">
+<input type="number" name="" id="w">
+<input type="number" name="" id="h">
+<button onclick="gen_div()">submit</button>
+
+<!--zad3-->
+<input type="number" name="" id="min">
+<input type="number" name="" id="max">
+<button onclick="random_gen()">random</button>
+<div id="result"></div>
+<script>
+    function img(){
+        let src = "";
+        if(document.getElementById('img1').checked){
+            src="./nowe2.png"
+        }else if (document.getElementById('img2').checked){
+            src="./nowe9.png"
+        }
+        // console.log(src)
+        if(src!=""){
+            let ile = document.getElementById('ile').value
+            for (let i =0; i<ile; i++){
+                let element = document.createElement('img')
+                element.src=src
+                document.getElementById('result').appendChild(element)
+            }
+        }
+    }
+    function gen_div(){
+        let div = document.createElement('div');
+        div.style.backgroundColor=document.getElementById('color').value;
+        div.style.width=document.getElementById('w').value+"px";
+        div.style.height=document.getElementById('h').value+"px";
+        document.getElementById('result').appendChild(div)
+    }
+    function random_gen(){
+        let min = parseInt(document.getElementById('min').value)
+        let max = parseInt(document.getElementById('max').value)
+        let dif=max-min;
+        let result = Math.round(Math.random()*dif+min);
+        console.log(result)
+        for (let i =0;i<result;i++){
+            let div = document.createElement('div');
+            div.style.backgroundColor="red";
+            div.style.width="100px";
+            div.style.height="100px";
+            document.getElementById('result').appendChild(div)
+        }
+
+    }
+</script>
+</body>
+</html>
